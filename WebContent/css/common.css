@@ -1,0 +1,145 @@
+@charset "utf-8";
+html {overflow-y:scroll;}
+html, body, blockquote, caption, dd, div, dl, dt, fieldset, form, frame, h1, h2, h3, h4, h5, h6, hr, iframe, input, legend, li, object, ol, p, pre, q, select, table, textarea, tr, td, ul, button {margin:0; padding:0;}
+ol, ul {list-style:none;}
+fieldset, img {border:0;}
+hr {display:none;}
+table {border-collapse:collapse; border:0; empty-cells:show;}
+button {overflow:visible;}
+a {color:inherit; text-decoration:none;}
+a:link, a:active, a:visited {color:#555;}
+a:hover {text-decoration:underline;}
+legend {visibility:hidden; width:0; height:0;}
+caption {overflow:hidden; width:0; height:0; font-size:0; line-height:0; text-indent:-9999px;}
+button {border:0; cursor:pointer; outline:0;}
+input {outline-style:none;}
+select, input, button, textarea {font-family:'Core Sans C','Noto Sans KR';}
+
+#mainWrap {width:100%; min-width:1200px;}
+
+/* header */
+.top{position:relative;}
+.header-wrap {font-weight:normal;}
+.header {position:relative; height:86px; border-bottom:1px solid #eee;}
+.header h1 {position:absolute; left:0; top:29px; z-index:105; width:129px; height:28px; text-indent:-999em; background:url(../images/top_logo.png) 0 0 no-repeat;}
+.header h1 a {display:block; height:100%;}
+.header a {color:inherit; text-decoration:none;}
+.header .inner {position:relative; width:1160px; margin:0 auto;}
+.header-util {position:relative; z-index:100; width:100%;}
+.header-util:after {visibility:hidden; display:block; clear:both; height:0; content:'';}
+.header-util > ul {float:right; padding:15px 0 0 0;}
+.header-util > ul > li {position:relative; float:left; padding:0 0 10px 13px; font-size:11px; line-height:12px;}
+.header-util > ul > li > a {font-weight:normal; vertical-align:top;}
+.header-util > ul > li.util-cart span.arrow-bottom {vertical-align:middle;}
+.header-util li .arrow-bottom {margin:-2px 0 0 6px;}
+
+.header-service {position:relative; padding-right:272px;}
+.header-service:after {visibility:hidden; display:block; clear:both; height:0; content:'';}
+
+.header-service .nav li:hover a {color:#fbbebe;}
+.header-service .search-form {position:absolute; right:0; top:0; width:202px; height:30px; padding:0 44px 0 14px; background-color:#fff; border-radius:15px; border:1px solid #ea5d5d;}
+.header-service .search-form input {display:block; width:100%; height:28px; margin:0; color:#666; font-size:12px; line-height:30px; vertical-align:top; border:0;}
+.header-service .search-form input::-webkit-search-cancel-button {display:none;}
+.header-service .search-form input::-ms-clear {display:none;}
+.header-service .search-form .btn-search {position:absolute; right:12px; top:0; width:30px; height:30px; padding:8px; background-color:transparent;}
+.header-service .search-form .search {background-image:url(../images/search.png); text-indent:-999em; width:14px; height:14px; display:block;}
+
+.gnb-wrap {
+	border-bottom:1px solid #f5f5f5;
+	background-color:#fff;
+}
+
+.nav {
+	width:1200px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	margin: 0 auto;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	z-index: 9999;
+}
+
+#main-menu li.line {
+	padding-left:9px;
+	margin-left:9px;
+}
+	
+#main-menu li.line:after {
+	content:'';
+	display:inline-block;
+	position:absolute;
+	left:0;
+	top:17px;
+	width:1px;
+	height:7px;
+	background-color:#ccc;
+}
+
+#main-menu > li {
+	float: left;
+	position: relative;
+	flex:auto;
+}
+
+#main-menu > li > a {
+	font-size: 13px;
+	color: #666;
+	text-align: center;
+	text-decoration: none;
+	letter-spacing: 0.05em;
+	display: block;
+	padding: 10px 50px;
+	font-weight: bold;
+}
+
+#main-menu > li > a:hover {
+	/* color:#ff3131; */
+	color: #ea5d5d;
+}
+
+#sub-menu {
+	position: absolute;
+	border:1px solid #c8c8c8;
+	background-color: rgba( 255, 255, 255, 0.8 );
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.15s ease-in;
+	width: 250px;
+}
+
+#sub-menu > li {
+	padding: 16px 28px;
+}
+
+#sub-menu > li >  a {
+	color: #000;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+#main-menu > li:hover #sub-menu {
+	opacity: 1;
+	visibility: visible;
+}
+
+#sub-menu > li >  a:hover {
+	text-decoration: underline;
+}
+
+.swiper-container {
+	width: 100%;
+    height: 100%;
+    min-width: 1200px;
+}
+
+.swiper-slide {
+	background-position: center;
+    background-size: cover;
+}
+
+.gallery tr > td:nth-child(1) {padding-left:20px}

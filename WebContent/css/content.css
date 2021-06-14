@@ -1,0 +1,34 @@
+#container {
+	width: 100%;
+	/* min-width: 1200px; */
+}
+
+#contentWrap {
+	width: 1200px;
+	padding: 50px 0 50px 0;
+	margin: 0 auto;
+	font-size: 12px;
+}
+
+#container input {
+ 	padding: 5px;
+	border: 1px solid #ddd;
+/* 	margin-top: 10px; */
+}
+
+#contentWrap .formBox {
+ 	padding: 50px 70px 60px;
+	color: #666;
+	border: 1px solid #eee;
+	border-top: 3px solid #d50c0c;
+	background-color: #fff;
+}
+
+select {
+	padding:4px;
+	border: 1px solid #ddd;
+}
+
+#contentWrap form > div {
+	display: table-cell;
+}
